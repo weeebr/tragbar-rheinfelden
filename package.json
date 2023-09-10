@@ -1,35 +1,24 @@
 {
-  "name": "red-struss",
+  "name": "example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.5.0",
-    "@material-ui/icons": "^4.4.3",
-    "chai": "^4.2.0",
-    "enzyme": "^3.10.0",
-    "polished": "^3.4.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1",
-    "react-lines-ellipsis": "^0.14.1",
-    "react-responsive-carousel": "^3.1.50",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "react-slick": "^0.25.2",
-    "react-swipeable-views": "^0.13.3",
-    "react-test-renderer": "^16.10.2",
-    "shave": "^2.5.6",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^4.4.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "reinstall": "rm -rf node_modules && yarn install"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -42,5 +31,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "node-sass": "^9.0.0",
+    "prettier": "3.0.3"
   }
 }
